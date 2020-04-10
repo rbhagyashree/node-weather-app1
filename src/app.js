@@ -62,7 +62,9 @@ app.get('/weather', (req, res) => {
                 res.send({
                     description: data1.weather_description,
                     temperature: data1.temperature,
-                    location: data1.location
+                    location: data1.location,
+                    humidity: data1.humidity,
+                    feelslike: data1.feelslike
                 })
              }
         })};

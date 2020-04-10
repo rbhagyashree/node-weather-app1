@@ -18,6 +18,8 @@ const search = document.querySelector('input');
 const temperature = document.querySelector('#temperature');
 const weather_description = document.querySelector('#weather_description');
 const locationRegion = document.querySelector('#location');
+const humidity = document.querySelector("#humidity");
+const feelslike = document.querySelector("#feelslike");
 
 
 weatherForm.addEventListener('submit', (e) => {
@@ -38,6 +40,8 @@ weatherForm.addEventListener('submit', (e) => {
             temperature.textContent = 'Temperature: ' + data.temperature;
             weather_description.textContent = 'Weather Description: ' + data.weather_description;
             locationRegion.textContent = 'Location: ' + data.location;
+            humidity.textContent = "Humidity: " + data.humidity;
+            feelslike.textContent = "Feels like: " + data.feelslike;
         }
     })
 })
